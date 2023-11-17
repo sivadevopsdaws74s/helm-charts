@@ -11,5 +11,5 @@ spec:
   ports:
   - name: name-of-service-port
     protocol: TCP
-    port: "{{ .Values.service.port }}" # this port belongs to service
+    port: {{ .Values.service.port }} # this port belongs to service
     targetPort: http-web-svc # this port belongs to container
